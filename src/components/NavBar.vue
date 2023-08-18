@@ -1,8 +1,30 @@
+<script>
+export default {
+  mounted() {
+    const aboutTextElement = document.getElementById("about-text");
+    const aboutText = `Bruno Cantarelli | Portifólio feito com Vue.js com intenção de praticar`;
+
+    let index = 0;
+
+    function typeAboutText() {
+      aboutTextElement.textContent = aboutText.slice(0, index);
+      index++;
+
+      if (index <= aboutText.length) {
+        setTimeout(typeAboutText, 100); // Ajuste o tempo conforme desejado
+      }
+    }
+
+    typeAboutText();
+  },
+};
+</script>
+
 <template>
-  <div class="main">
+  <div class="conteiner-nav">
     <div class="div-name">
-      <h1>
-        <a href="#" class="name" id="about-text"> Bruno Cantarelli </a>
+      <h1 class="name">
+        <a href="#" class="name" id="about-text"></a>
       </h1>
     </div>
     <div class="div-options">
@@ -70,47 +92,28 @@
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    const aboutTextElement = document.getElementById("about-text");
-    const aboutText = `Bruno Cantarelli`;
-
-    let index = 0;
-
-    function typeAboutText() {
-      aboutTextElement.textContent = aboutText.slice(0, index);
-      index++;
-
-      if (index <= aboutText.length) {
-        setTimeout(typeAboutText, 200); // Ajuste o tempo conforme desejado
-      }
-    }
-
-    typeAboutText();
-  },
-};
-</script>
-
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
 
-.main {
-  display: flex;
+.conteiner-nav {
+  background-color: rgba(255, 255, 255, 0.623);
   justify-content: space-between;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  position: fixed;
+  display: flex;
   width: 100%;
-  padding: 30px;
-}
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 30px;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .name {
   text-decoration: none;
   color: inherit;

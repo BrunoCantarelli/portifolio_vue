@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <template>
   <div class="conteiner-about">
     <div class="about-main">
@@ -18,7 +21,6 @@
   </div>
 </template>
 
-<script></script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
@@ -28,6 +30,7 @@
   background-image: url(@/assets/img/sobre-mim.svg);
   background-size: cover;
   height: 100vh;
+  align-items: center;
 }
 
 .about-main {
@@ -49,7 +52,7 @@
 .about {
   color: #ffffff;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .intro-img {
