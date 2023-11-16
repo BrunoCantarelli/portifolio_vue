@@ -10,6 +10,7 @@ import MyProjects from "./components/MyProjects.vue";
   <AboutMe />
   <MyObjectives />
   <MyProjects />
+
 </template>
 
 <style></style>

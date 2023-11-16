@@ -2,7 +2,7 @@
 export default {
   mounted() {
     const aboutTextElement = document.getElementById("about-text");
-    const aboutText = `Bruno Cantarelli | Portifólio feito com Vue.js com intenção de praticar`;
+    const aboutText = `Bruno Cantarelli`;
 
     let index = 0;
 
@@ -11,7 +11,7 @@ export default {
       index++;
 
       if (index <= aboutText.length) {
-        setTimeout(typeAboutText, 100); // Ajuste o tempo conforme desejado
+        setTimeout(typeAboutText, 100); 
       }
     }
 
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-  <div class="conteiner-nav">
+  <div class="container-nav">
     <div class="div-name">
       <h1 class="name">
         <a href="#" class="name" id="about-text"></a>
@@ -98,16 +98,13 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
 
-.conteiner-nav {
+.container-nav {
   background-color: rgba(255, 255, 255, 0.623);
   justify-content: space-between;
   position: fixed;
   display: flex;
   width: 100%;
-  margin-top: 20px;
   padding: 20px;
-  border-radius: 30px;
-
 }
 * {
     margin: 0;
@@ -154,7 +151,7 @@ export default {
   left: 0;
   width: 0;
   height: 0.2rem;
-  background-color: #dc143c;
+  background-color: #0011aa;
   transition: all 300ms ease-in-out;
 }
 

@@ -3,7 +3,7 @@
 <template>
   <div class="conteiner-objectives">
     <div class="img-objectives">
-      <img src="@/assets/img/portImg.svg" alt="teste" />
+      <!-- <img src="@/assets/img/portImg.svg" alt="teste" /> -->
     </div>
 
     <div class="objectives-main">
@@ -49,29 +49,33 @@
 
 <style>
 .conteiner-objectives {
-  background-image: url(@/assets/img/direita-esquerda.svg);
+  background-image: url(@/assets/img/esquerda-azul-cinza.svg);
   background-size: cover;
   display: flex;
   height: 100vh;
   align-items: center;
 }
+
 .objectives-main {
   flex: 1;
 }
+
 .img-objectives {
   flex: 1;
 }
+
 .img-objectives img {
   max-width: 100%;
   height: 500px;
 }
+
 .objectives-title {
   display: flex;
   color: #ffffff;
   font-size: 24px;
   margin-bottom: 10px;
   align-items: center;
-  font-family: "Caveat", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 90px;
   flex-direction: column;
 }
@@ -83,9 +87,10 @@
   color: #ffffff;
   font-family: "Barlow Condensed", sans-serif;
 }
+
 .words-importants {
   font-family: "Caveat", cursive;
   font-size: 50px;
-  color: #dc143c;
+  color: #00ccff;
 }
 </style>
